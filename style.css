@@ -1,0 +1,244 @@
+@import url("animate.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    /* padding: 20px; */
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #000000af;
+    padding: 5px;
+    margin: 0;
+
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s;
+    transition: 0.2s;
+    box-shadow: 0 0 5px #fff;
+    /* filter: sepia(1) saturate(3) hue-rotate(70deg); */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.profile-pic:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2 {
+    animation: outline 3s infinite alternate;
+    margin: 0.5em 0;
+}
+
+.skills,
+.socials,
+.projects {
+    margin: 20px 0;
+}
+
+.social-links a {
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills span {
+    cursor: cell;
+    background: #fff;
+    color: #1e3c72;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    animation: slideIn 1s ease;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.skills span:hover {
+    border-color: #2a5298;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    font-size: 24px;
+    transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.social-links a:hover {
+    color: #ff5506;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(42, 82, 152, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(42, 82, 152, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(42, 82, 152, 0);
+    }
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-skills {
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2a5298;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #ffee00;
+}
+
+footer {
+    padding: 20px 0;
+    background: #000;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    /* .profile-pic {
+        width: 100px;
+        height: 100px;
+    } */
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .container {
+        border-radius: unset;
+        padding: 25px 10px;
+    }
+
+    .social-links a {
+        font-size: 20px;
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
