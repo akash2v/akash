@@ -169,9 +169,11 @@ nav {
     gap: 12px;
     margin-bottom: 30px;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .social-links a {
     display: flex;
     justify-content: center;
@@ -183,6 +185,7 @@ a{
     border-radius: 50%;
     font-size: 1.2rem;
     transition: var(--transition);
+    border: 1px solid var(--border-color);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -198,9 +201,11 @@ a{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contact-link {
+.contact-badge a {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -212,13 +217,24 @@ a{
     font-weight: 500;
     transition: var(--transition);
     box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+    margin: 5px;
 }
 
-.contact-link:hover {
+.contact-badge a:last-child {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(26, 78, 146, 0.3);
+}
+
+.contact-badge a:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(231, 76, 60, 0.4);
-    background-color: #c0392b;
 }
+
+.contact-badge a:last-child:hover {
+    background-color: var(--primary-dark);
+    box-shadow: 0 6px 16px rgba(26, 78, 146, 0.4);
+}
+
 
 /* Section Titles */
 .section-title {
@@ -511,15 +527,15 @@ footer .container {
         width: 150px;
         height: 150px;
     }
-    
+
     .projects {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-    
+
     .project-image {
         height: 160px;
     }
-    
+
     footer .container {
         flex-direction: column;
         gap: 15px;
@@ -530,27 +546,27 @@ footer .container {
     .profile-container {
         padding: 0 10px;
     }
-    
+
     .nav-container {
         padding: 10px 15px;
     }
-    
+
     .logo h1 {
         font-size: 1.2rem;
     }
-    
+
     .section-title {
         font-size: 1.5rem;
     }
-    
+
     .projects {
         grid-template-columns: 1fr;
     }
-    
+
     .channel-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-link {
         padding: 8px 15px;
         font-size: 0.9rem;
@@ -563,13 +579,17 @@ footer .container {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.skills span, .project-card, .profile-pic, .channel-card {
+.skills span,
+.project-card,
+.profile-pic,
+.channel-card {
     animation: fadeIn 0.6s ease-out forwards;
 }
 
@@ -719,6 +739,7 @@ footer .container {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
