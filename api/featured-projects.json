@@ -28,7 +28,7 @@
         }
     },
     {
-        "title": "gTool",
+        "title": "gTool - GitHub Search Tool",
         "description": "A Github Search Tool including features of filteration with GitHub API integration.",
         "image": "https://i.postimg.cc/QMrxyNPc/image.png",
         "techStack": [
@@ -37,7 +37,7 @@
             "API"
         ],
         "link": {
-            "text": "gTool",
+            "text": "Start Searching",
             "url": "https://gtool.skytup.com"
         },
         "source": "https://github.com/akash2v/gtool/"
