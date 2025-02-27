@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Skytup",
+        "description": "A website that publishes information in modern technology.",
+        "image": "https://www.skytup.com/asset/album/no-thumbnail.jpg",
+        "techStack": ["Web Platform"],
+        "link": "https://www.google.com/search?q=site%3Askytup.com"
+    },
+    {
+        "title": "Anymo Space",
+        "description": "An Anonymous Chat application",
+        "image": "https://i.postimg.cc/G2T6CbGj/image.png",
+        "techStack": ["HTML", "CSS", "JS", "Node.js"],
+        "link": "https://anymo.skytup.com"
+    },
+    {
+        "title": "gTool",
+        "description": "A Github Search Tool with GitHub API",
+        "image": "https://i.postimg.cc/QMrxyNPc/image.png",
+        "techStack": ["React", "Tailwind", "API"],
+        "link": "https://gtool.skytup.com"
+    },
+    {
+        "title": "Server Management System",
+        "description": "For Apache using PHP",
+        "image": "https://www.skytup.com/asset/album/no-thumbnail.jpg",
+        "techStack": ["PHP", "Apache"],
+        "link": "mailto:akash@skytup.com"
+    }
+]

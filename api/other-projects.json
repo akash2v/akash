@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Skytup Timer",
+        "description": "Customizable Timer",
+        "image": "https://project.skytup.com/timer/skytup-timer.webp",
+        "techStack": ["HTML", "CSS", "JS", "PHP"],
+        "link": "https://project.skytup.com/timer/"
+    },
+    {
+        "title": "YouTube Thumbnail Downloader",
+        "description": "Extract thumbnails from YouTube videos",
+        "image": "https://i.postimg.cc/g21PX7ZW/youtube-thumbnail-downloader.webp",
+        "techStack": ["JavaScript"],
+        "link": "https://project.skytup.com/youtube/thumnail-downloader/"
+    },
+    {
+        "title": "Calculator",
+        "description": "Simple web calculator",
+        "image": "https://i.postimg.cc/kGBWd0rh/image.png",
+        "techStack": ["HTML", "CSS", "JS"],
+        "link": "https://project.skytup.com/calculator",
+        "source": "https://github.com/akvcode/html/blob/main/calculator/index.html"
+    },
+    {
+        "title": "3D Text Maker",
+        "description": "Create 3D text visualizations",
+        "image": "https://i.postimg.cc/mkKczdJk/image.png",
+        "techStack": ["HTML", "CSS", "Three.js"],
+        "link": "https://project.skytup.com/3d/3d-text-writer.html?text=Akash"
+    }
+]
