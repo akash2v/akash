@@ -22,7 +22,7 @@
     --youtube: #ff0000;
     --leetcode: #f59f00;
     --gfg: #2f8d46;
-    --codechef: #5b4638;
+    --website: #c24f03;
 }
 
 .light-mode {
@@ -345,12 +345,15 @@ nav {
     color: var(--gfg);
 }
 
-.channel-card.codechef {
-    border-left: 4px solid var(--codechef);
+.channel-card.website {
+    border-left: 4px solid var(--website);
+}
+.website img{
+    width: 50px;;
 }
 
-.channel-card.codechef i {
-    color: var(--codechef);
+.channel-card.website i {
+    color: var(--website);
 }
 
 .channel-card:hover {
@@ -370,7 +373,7 @@ nav {
     background-color: #2f8d461a;
 }
 
-.channel-card.codechef:hover {
+.channel-card.website:hover {
     background-color: #5b46381a;
 }
 
