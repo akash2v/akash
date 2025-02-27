@@ -1,5 +1,5 @@
 // This script changes the mode of the page from light to dark and vice versa
-let darkMode = localStorage.getItem("darkMode") || "false";
+let darkMode = localStorage.getItem("darkMode") || "true";
 if (darkMode === "true") {
     let element = document.body;
     element.classList.add("dark-mode");
