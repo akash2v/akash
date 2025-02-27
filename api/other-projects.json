@@ -3,7 +3,12 @@
         "title": "Skytup Timer",
         "description": "Customizable Timer",
         "image": "https://project.skytup.com/timer/skytup-timer.webp",
-        "techStack": ["HTML", "CSS", "JS", "PHP"],
+        "techStack": [
+            "HTML",
+            "CSS",
+            "JS",
+            "PHP"
+        ],
         "link": {
             "text": "See live",
             "url": "https://project.skytup.com/timer/"
@@ -13,7 +18,9 @@
         "title": "YouTube Thumbnail Downloader",
         "description": "Extract thumbnails from YouTube videos",
         "image": "https://i.postimg.cc/g21PX7ZW/youtube-thumbnail-downloader.webp",
-        "techStack": ["JavaScript"],
+        "techStack": [
+            "JavaScript"
+        ],
         "link": {
             "text": "See live",
             "url": "https://project.skytup.com/youtube/thumnail-downloader/"
@@ -21,23 +28,32 @@
     },
     {
         "title": "Calculator",
-        "description": "Simple web calculator",
+        "description": "I've built this in my early days of learning web development",
         "image": "https://i.postimg.cc/kGBWd0rh/image.png",
-        "techStack": ["HTML", "CSS", "JS"],
+        "techStack": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
         "link": {
             "text": "See live",
             "url": "https://project.skytup.com/calculator"
         },
-        "source": "https://github.com/akvcode/html/blob/main/calculator/index.html"
+        "source": "https://github.com/akash2v/html/blob/main/calculator/index.html"
     },
     {
         "title": "3D Text Maker",
         "description": "Create 3D text visualizations",
         "image": "https://i.postimg.cc/mkKczdJk/image.png",
-        "techStack": ["HTML", "CSS", "Three.js"],
+        "techStack": [
+            "HTML",
+            "CSS",
+            "Three.js"
+        ],
         "link": {
             "text": "See Live",
             "url": "https://project.skytup.com/3d/3d-text-writer.html?text=Akash"
-        }
+        },
+        "source":"https://github.com/akash2v/static/tree/main/3d-text-generator"
     }
 ]
