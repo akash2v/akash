@@ -3,28 +3,55 @@
         "title": "Skytup",
         "description": "A website that publishes information in modern technology.",
         "image": "https://www.skytup.com/asset/album/no-thumbnail.jpg",
-        "techStack": ["Web Platform"],
-        "link": "https://www.google.com/search?q=site%3Askytup.com"
+        "techStack": [
+            "Web Platform"
+        ],
+        "link": {
+            "text": "Visit on Google",
+            "url": "https://www.google.com/search?q=site%3Askytup.com"
+        },
+        "source": "https://github.com/skytup/"
     },
     {
         "title": "Anymo Space",
-        "description": "An Anonymous Chat application",
+        "description": "An Anonymous Chat application with features like creating temporary chat rooms.",
         "image": "https://i.postimg.cc/G2T6CbGj/image.png",
-        "techStack": ["HTML", "CSS", "JS", "Node.js"],
-        "link": "https://anymo.skytup.com"
+        "techStack": [
+            "HTML",
+            "CSS",
+            "JS",
+            "Node.js"
+        ],
+        "link": {
+            "text": "Anymo Space",
+            "url": "https://anymo.skytup.com"
+        }
     },
     {
         "title": "gTool",
-        "description": "A Github Search Tool with GitHub API",
+        "description": "A Github Search Tool including features of filteration with GitHub API integration.",
         "image": "https://i.postimg.cc/QMrxyNPc/image.png",
-        "techStack": ["React", "Tailwind", "API"],
-        "link": "https://gtool.skytup.com"
+        "techStack": [
+            "React",
+            "Tailwind",
+            "API"
+        ],
+        "link": {
+            "text": "gTool",
+            "url": "https://gtool.skytup.com"
+        }
     },
     {
         "title": "Server Management System",
         "description": "For Apache using PHP",
         "image": "https://www.skytup.com/asset/album/no-thumbnail.jpg",
-        "techStack": ["PHP", "Apache"],
-        "link": "mailto:akash@skytup.com"
+        "techStack": [
+            "PHP",
+            "Apache"
+        ],
+        "link": {
+            "text": "View Project",
+            "url": "mailto:akash@skytup.com"
+        }
     }
 ]

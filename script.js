@@ -32,7 +32,7 @@ const loadProjects = async (url, containerSelector) => {
                     <div class="tech-stack">
                         ${project.techStack.map(tech => `<span>${tech}</span>`).join('')}
                     </div>
-                    <a href="${project.link}" class="project-link" target="_blank">See Live</a>
+                    <a href="${project.link.url}" class="project-link" target="_blank">${project.link.text || 'View Project'}</a>
                     ${project.source ? `<a href="${project.source}" class="project-link github" target="_blank"><i class="fab fa-github"></i> Source</a>` : ''}
                 </div>
             </div>
