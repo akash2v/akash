@@ -1,7 +1,7 @@
 [
     {
         "title": "Skytup Timer",
-        "description": "Customizable Timer",
+        "description": "A Customizable Timer for speacial events like birthday countdown, etc.",
         "image": "https://project.skytup.com/timer/skytup-timer.webp",
         "techStack": [
             "HTML",
@@ -54,6 +54,6 @@
             "text": "See Live",
             "url": "https://project.skytup.com/3d/3d-text-writer.html?text=Akash"
         },
-        "source":"https://github.com/akash2v/static/tree/main/3d-text-generator"
+        "source": "https://github.com/akash2v/static/tree/main/3d-text-generator"
     }
 ]
