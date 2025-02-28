@@ -4,7 +4,12 @@
         "description": "A website that publishes information in modern technology.",
         "image": "https://www.skytup.com/asset/album/no-thumbnail.jpg",
         "techStack": [
-            "Web Platform"
+            "php",
+            "MySql",
+            "html",
+            "css",
+            "js",
+            "jquery"
         ],
         "link": {
             "text": "Visit on Google",
