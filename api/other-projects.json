@@ -63,11 +63,11 @@
         "techStack": [
             "HTML",
             "CSS",
-            "PHP"
+            "node.js"
         ],
         "link": {
             "text": "Calculate",
-            "url": "https://project.skytup.com/love-calculator"
+            "url": "https://love-calculator-is5w.onrender.com/"
         }
     }
 ]
