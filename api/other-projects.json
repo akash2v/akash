@@ -55,5 +55,19 @@
             "url": "https://project.skytup.com/3d/3d-text-writer.html?text=Akash"
         },
         "source": "https://github.com/akash2v/static/tree/main/3d-text-generator"
+    },
+    {
+        "title": "Love Calculator",
+        "description": "Calculate love percentage between two names",
+        "image": "https://i.postimg.cc/Y07yPv65/image.png",
+        "techStack": [
+            "HTML",
+            "CSS",
+            "PHP"
+        ],
+        "link": {
+            "text": "Calculate",
+            "url": "https://project.skytup.com/love-calculator"
+        }
     }
 ]
