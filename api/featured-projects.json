@@ -59,5 +59,17 @@
             "text": "Contact Now",
             "url": "mailto:akash@skytup.com"
         }
+    },
+    {
+        "title": "SpotFix",
+        "description": "Report issues and improve your Environment",
+        "image": "https://spotfix.skytup.com/thumbnail.webp",
+        "techStack": [
+            "Web Technologies",
+        ],
+        "link": {
+            "text": "Open",
+            "url": "https://spotfix.skytup.com/"
+        }
     }
 ]
