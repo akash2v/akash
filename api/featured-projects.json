@@ -70,6 +70,7 @@
         "link": {
             "text": "Open",
             "url": "https://spotfix.skytup.com/"
-        }
+        },
+        "source": "https://github.com/akash2v/spotfix"
     }
 ]
