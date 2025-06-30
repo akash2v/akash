@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal Careers</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Bookmark Grid Styles */
+        .bookmark-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Bookmark Item Styles */
+        .bookmark-item {
+            background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            overflow: hidden;
+        }
+
+        .bookmark-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .bookmark-item a {
+            display: block;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #343a40;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .bookmark-item a:hover {
+            color: #007bff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem 0;
+                margin-bottom: 1.5rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .bookmark-grid {
+                gap: 1rem;
+            }
+
+            .bookmark-item a {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 1.75rem;
+            }
+
+            .bookmark-item a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Job Portal Careers</h1>
+        <p>Explore career opportunities in leading companies</p>
+    </header>
+
+    <div class="container">
+        <div class="bookmark-grid">
+            <script>
+                const careerPages = {
+                    "Amazon": "https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=relevant&job_type%5B%5D=Full-Time&job_type%5B%5D=Part-Time&country%5B%5D=IND&distanceType=Mi&radius=24km&industry_experience=less_than_1_year&latitude=&longitude=&loc_group_id=&loc_query=&base_query=software%20developer&city=&country=®ion=&county=&query_options=&",
+                    "Apple": "https://jobs.apple.com/",
+                    "Google": "https://careers.google.com/jobs/results/",
+                    "Microsoft": "https://careers.microsoft.com/",
+                    "Meta (Facebook)": "https://www.metacareers.com/jobs",
+                    "JPMorgan Chase": "https://careers.jpmorgan.com/us/en/home",
+                    "Atlassian": "https://www.atlassian.com/company/careers/all-jobs",
+                    "Adobe": "https://www.adobe.com/careers.html",
+                    "PayPal": "https://www.paypal.com/us/webapps/mpp/jobs",
+                    "Juspay": "https://juspay.in/careers",
+                    "Flipkart": "https://www.flipkartcareers.com/#!/joblist",
+                    "Intel": "https://jobs.intel.com/",
+                    "NVIDIA": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+                    "IBM": "https://www.ibm.com/employment/",
+                    "Cisco": "https://jobs.cisco.com/",
+                    "Oracle": "https://www.oracle.com/corporate/careers/",
+                    "Salesforce": "https://www.salesforce.com/company/careers/",
+                    "SAP": "https://www.sap.com/about/careers.html",
+                    "Siemens": "https://jobs.siemens.com/",
+                    "Dell Technologies": "https://jobs.dell.com/",
+                    "Qualcomm": "https://www.qualcomm.com/company/careers",
+                    "Zoho": "https://www.zoho.com/careers/",
+                    "TCS": "https://www.tcs.com/careers",
+                    "Infosys": "https://www.infosys.com/careers/",
+                    "Wipro": "https://careers.wipro.com/",
+                    "HCLTech": "https://www.hcltech.com/careers",
+                    "Accenture": "https://www.accenture.com/in-en/careers",
+                    "Capgemini": "https://www.capgemini.com/careers/",
+                    "Cognizant": "https://careers.cognizant.com/global/en",
+                    "Tech Mahindra": "https://careers.techmahindra.com/",
+                    "Tesla": "https://www.tesla.com/careers",
+                    "Goldman Sachs": "https://www.goldmansachs.com/careers/",
+                    "Morgan Stanley": "https://www.morganstanley.com/people-opportunities",
+                    "Bank of America": "https://careers.bankofamerica.com/",
+                    "Deloitte": "https://www.deloitte.com/global/en/careers.html",
+                    "PwC": "https://www.pwc.com/gx/en/careers.html",
+                    "EY": "https://careers.ey.com/",
+                    "KPMG": "https://home.kpmg/xx/en/home/careers.html",
+                    "ServiceNow": "https://www.servicenow.com/company/careers.html",
+                    "Snowflake": "https://careers.snowflake.com/",
+                    "Palantir": "https://www.palantir.com/careers/",
+                    "Epic Systems": "https://careers.epic.com/",
+                    "VMware": "https://careers.vmware.com/",
+                    "Intuit": "https://www.intuit.com/careers/",
+                    "Stripe": "https://stripe.com/jobs",
+                    "Square": "https://www.square.com/careers",
+                    "Twitter": "https://careers.x.com/",
+                    "Uber": "https://www.uber.com/global/en/careers/",
+                    "Lyft": "https://www.lyft.com/careers",
+                    "Airbnb": "https://careers.airbnb.com/",
+                    "Spotify": "https://www.lifeatspotify.com/jobs",
+                    "Dropbox": "https://www.dropbox.com/jobs",
+                    "Slack": "https://slack.com/careers",
+                    "Zoom": "https://www.zoom.us/careers",
+                    "Tata Group": "https://www.tata.com/careers",
+                    "Reliance Industries": "https://careers.ril.com/",
+                    "Mindtree": "https://www.mindtree.com/careers",
+                    "L&T Technology Services": "https://www.ltts.com/careers",
+                    "Ericsson": "https://jobs.ericsson.com/",
+                    "Nokia": "https://www.nokia.com/about-us/careers/",
+                    "Honeywell": "https://careers.honeywell.com/",
+                    "Texas Instruments": "https://careers.ti.com/",
+                    "Broadcom": "https://www.broadcom.com/company/careers",
+                    "AMD": "https://www.amd.com/en/corporate/careers",
+                    "GitLab": "https://about.gitlab.com/jobs/",
+                    "GitHub": "https://github.careers/",
+                    "Red Hat": "https://www.redhat.com/en/jobs",
+                    "ThoughtWorks": "https://www.thoughtworks.com/careers"
+                };
+
+                for (const company in careerPages) {
+                    if (careerPages.hasOwnProperty(company)) {
+                        const url = careerPages[company];
+                        let displayName = url.replace(/^https?:\/\//, '').replace(/^www\./, '');
+                        displayName = displayName.split('/')[0];
+
+                        document.write(`<div class="bookmark-item"><a href="${url}" target="_blank">${displayName}</a></div>`);
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
