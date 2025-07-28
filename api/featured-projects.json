@@ -18,6 +18,20 @@
         "source": "https://github.com/skytup/"
     },
     {
+        "title": "Skytup AI",
+        "description": "This is an AI chatbot that can answer your questions and provide information on various topics.",
+        "image": "https://ai.skytup.com/skytup-ai.png",
+        "techStack": [
+            "React",
+            "Node.js",
+            "Express"
+        ],
+        "link": {
+            "text": "Chat with AI",
+            "url": "https://ai.skytup.com"
+        }
+    },
+    {
         "title": "Anymo Space",
         "description": "An Anonymous Chat application with features like creating temporary chat rooms.",
         "image": "https://i.postimg.cc/G2T6CbGj/image.png",
