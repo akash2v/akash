@@ -39,7 +39,7 @@
             images.forEach(img => {
                 img.setAttribute('onerror', "this.onerror=null; this.src='https://www.skytup.com/asset/album/no-thumbnail.jpg';");
                 img.addEventListener('error', () => {
-                    img.src = 'https://www.skytup.com/asset/album/no-thumbnail.jpg';
+                    img.src = 'https://www.skytup.com/assets/default-thumbnail.jpg';
                 });
             });
         });
