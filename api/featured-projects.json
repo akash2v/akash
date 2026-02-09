@@ -2,7 +2,7 @@
     {
         "title": "Skytup",
         "description": "A website that publishes information in modern technology.",
-        "image": "https://www.skytup.com/asset/album/no-thumbnail.jpg",
+        "image": "https://www.skytup.com/assets/default-thumbnail.jpg",
         "techStack": [
             "php",
             "MySql",
